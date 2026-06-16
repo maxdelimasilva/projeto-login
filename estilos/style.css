@@ -35,15 +35,18 @@ main{
     
     background-color:white;
     width: 300px;
-    height: 590px;
+    height: 530px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.767);
+    
+    transition:width .3s, height .3s;
+    transition-timing-function:ease ;
 }
 
 #imagem{
     display: block;
-    background: #010440 url(/imagens/pexels-turgay-koca-405356598-15307694.jpg);
+    background: var(--cor2) url(../imagens/pexels-turgay-koca-405356598-15307694.jpg);
     background-size: cover;
     width: 300px;
     height: 290px;
@@ -51,8 +54,10 @@ main{
 
 #formulario{
     display: block;
-    margin:10px;
+    padding:10px;
 }
+
+
 
 
 
