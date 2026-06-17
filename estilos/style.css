@@ -2,7 +2,7 @@
 
 :root{
     --cor1:#8C041D;
-    --cor2:#015CA3;
+    --cor2:#00003E;
     --cor3:#D9B504;
     --cor4:#F28705;
     --cor5:#F21B07;
@@ -31,7 +31,6 @@ main{
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
     
     background-color:white;
     width: 300px;
@@ -40,6 +39,7 @@ main{
     overflow: hidden;
     box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.767);
     
+    transform: translate(-50%,-50%);
     transition:width .5s, height .5s;
     transition-timing-function:ease ;
 }
@@ -78,9 +78,35 @@ form{
     width: 100%;
     height: 40px;
     margin: 5px 0;
-    border:none;
+    border:2px solid #4d677e;
     border-radius: 7px;
+}
 
+.campo > label{
+    display: none;
+}
+
+.campo > span{
+    color:white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: #01498E;
+    font-size: 1em;
+    width: calc(100% - 44.4px);
+    height: 100%;
+    border:0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-36%);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+    border:none;
 }
 
 form > input[type="submit"] {
